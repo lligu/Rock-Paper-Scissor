@@ -117,16 +117,20 @@ main {
     height: 150px;
     width: 150px;
     background-image: url(Media/symbols.png);
-    background-position: -30px;
+    background-position: -20px;
     background-size: 300%;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 #computerMove {
     height: 150px;
     width: 150px;
     background-image: url(Media/symbols.png);
-    background-position: -30px;
+    background-position: -290px;
     background-size: 300%;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 #ui {
@@ -144,6 +148,37 @@ main {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 25px;
+}
+
+#uiMoves button {
+    padding: 25px 125px 25px 125px;
+    background-color: transparent;
+    border: 7.5px solid #FED7F9;
+    box-shadow: 
+    0px 0px 5px 2.5px #FEEBFC, inset 0px 0px 5px 2.5px #FEEBFC,
+    0px 0px 25px 5px #D50BC1, inset 0px 0px 25px 5px #D50BC1,
+    0px 0px 50px 7.5px #9B088C, inset 0px 0px 50px 7.5px #9B088C,
+    0px 0px 75px 10px #4E0446, inset 0px 0px 75px 10px #4E0446;
+    border-radius: 30px;
+    font-family: 'Neonderthaw', cursive;
+    font-size: 3rem;
+    color: #FED7F9;
+    text-shadow: 
+    1px 1px 5px #FEEBFC,
+    5px 5px 15px #D50BC1,
+    10px 10px 30px #9B088C,
+    15px 15px 60px #4E0446,
+    -1px -1px 5px #FEEBFC,
+    -5px -5px 15px #D50BC1,
+    -10px -10px 30px #9B088C,
+    -15px -15px 60px #4E0446;
+    transition: 0.25s;
+    display: none;
+}
+
+#uiMoves button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .move {
