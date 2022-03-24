@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="it-IT">
-    <head>
-        <title>Ouch</title>
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0"/>
-        <meta charset="utf-8"/>
-        <meta name="description" content="placeholder"/>
-        <meta name="keywords" content="placeholder"/>
-        <meta name="author" content="placeholder"/>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <header>
-            <ul>
-                <li>Who</li>
-                <lI>What</lI>
-                <li>Why</li>
-                <li>Where</li>
-            </ul>
-            <img src="Media/logo.png" height="200px" width="250px"/>
-            <div id="title">
-                <h1>Lord Knows..</h1>
-                <h2>and I don't!</h2>
+
+<head>
+    <title>RPS</title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="placeholder" />
+    <meta name="keywords" content="placeholder" />
+    <meta name="author" content="placeholder" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rock, Paper, Scissor!</h1>
+    </header>
+    <main>
+        <section id="display">
+            <div id="displayBox">
+                <div id="userMove"></div>
+                <div id="score">
+                    <h3 class="white">Score:</h3>
+                    <p class="white"><span id="userScore">0</span> - <span id="computerScore">0</span></p>
+                </div>
+                <div id="computerMove"></div>
             </div>
-        </header>
-        
-        <script src="script.js"></script>
-    </body>
+        </section>
+        <section id="ui">
+            <h2 class="white">Make your move:</h2>
+            <div id="uiMoves">
+                <div id="rock" class="move"></div>
+                <div id="paper" class="move"></div>
+                <div id="scissors" class="move"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
