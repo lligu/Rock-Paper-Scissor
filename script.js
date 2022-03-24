@@ -9,6 +9,18 @@ function randomSelection() {
     }
     return computerSelection;
 } 
+
+function catchMove() {
+    moveChosen = null;
+    const moves = document.querySelectorAll('.move')
+    moves.forEach((move) => {
+        move.addEventListener('click', (e) => {
+            moveChosen = e.target.id;
+            console.log(moveChosen);
+        })
+    })
+}
+
 function playRound(computerPlay) {
     winner = 0;
     userPlay = prompt("Make your play:", "");
@@ -54,6 +66,7 @@ function playRound(computerPlay) {
     }
     return winner;
 }
+
 function game() {
     user = 0;
     computer = 0;
@@ -77,4 +90,7 @@ function game() {
     }
     console.log("There have been " + ties + " ties.")
 }
-game();
+
+
+//game();
+catchMove();
